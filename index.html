@@ -16,20 +16,33 @@
                 <form action="#">
                     <p>
                         <label for="name">Full Name</label>
-                        <input type="text" placeholder="Type Name Here" id="name">
+                        <input type="text" placeholder="Type Name Here" id="name" required>
+                        <i class="fa-solid"></i>
+                        <span id="nameError"></span>
                     </p>
                     <p>
                         <label for="email">Email</label>
-                        <input type="text" placeholder="xyz@gmail.com" id="email">
+                        <input type="text" placeholder="xyz@gmail.com" id="email" required>
+                        <i class="fa-solid"></i>
+                        <span id="emailError"></span>
                     </p>
                     <p>
                         <label for="password">Password</label>
-                        <input type="text" placeholder="at least 8 characters" id="password">
+                        <input type="text" placeholder="at least 8 characters" id="password" required>
+                        <i class="fa-solid"></i>
+                        <span id="passError"></span>
                     </p>
+                    <P>
+                        <input type="Submit" value="Create Account" id="submitBtn">
+                    </P>
                 </form>
             </main>
-            <footer></footer>
+            <footer class="singup-footer">
+                <p>Already have an account ? <a href="">Login</a></p>
+            </footer>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
 </html>
